@@ -1,0 +1,139 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+select {
+  max-width: 100%;
+}
+a {
+  color: inherit;
+}
+
+/* Fix for some angled images */
+.angled-img .img > img,
+.comments-block .comment-avatar > img,
+.comments-block .review-avatar > img,
+.reviews-block .comment-avatar > img,
+.reviews-block .review-avatar > img {
+	height: auto;
+}
+
+/* Menu Vertical fix */
+.navbar-youplay .navbar-brand img {
+  margin-top: -5px;
+}
+
+/* Fix edit-post link style */
+/*.edit-link > a,
+.edit-link > a:hover {
+  color: inherit;
+  text-decoration: none;
+}*/
+
+/* Fix Social Likes button icons color */
+.social-likes__button {
+  color: inherit;
+}
+
+/* Fix Default WP widgets */
+.widget_archive > ul,
+.widget_categories > ul,
+.widget_meta > ul,
+.widget_recent_entries > ul,
+.widget_text > .textwidget,
+.widget_tag_cloud > .tagcloud,
+.widget_recent_comments > ul,
+.widget_nav_menu ul,
+.widget_calendar > div,
+.widget_pages > ul,
+.widget_rss > ul,
+.widget_archive > label,
+.widget_categories > label {
+  margin-top: 1rem;
+  padding: 0 1.8rem;
+}
+.widget_archive > select,
+.widget_categories > select {
+  margin: 0 1.8rem;
+}
+.widget_calendar table {
+  width: 100%;
+  text-align: left;
+}
+.widget_archive ul a,
+.widget_categories ul a,
+.widget_recent_comments ul a {
+  display: inline-block;
+}
+.widget_rss li {
+  margin-top: 1rem;
+}
+.widget_rss cite.date {
+  text-align: right;
+  margin-top: 0;
+}
+
+
+/* Fix Search line height */
+.search-block > form input {
+  line-height: normal;
+}
+
+
+/* Fix mauto helper class */
+.mauto {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+
+/* Fix top offset when admin navbar */
+body.logged-in.admin-bar .navbar-youplay {
+  top: 32px !important;
+}
+body.logged-in.admin-bar .no-banner,
+body.logged-in.admin-bar .youplay-banner.banner-top {
+  padding-top: 112px; /* default 80px; */
+  min-height: 582px; /* default 550px */
+}
+body.logged-in.admin-bar .youplay-banner.banner-top.small {
+  min-height: 482px; /* default 450px */
+}
+body.logged-in.admin-bar .youplay-banner.banner-top.xsmall {
+  min-height: 382px; /* default 350px */
+}
+html {
+  margin-top: 0 !important;
+}
+@media screen and ( max-width: 782px ) {
+  body.logged-in.admin-bar .navbar-youplay,
+  body.logged-in.admin-bar .navbar-youplay .navbar-collapse {
+    top: 46px !important;
+  }
+  body.logged-in.admin-bar .no-banner,
+  body.logged-in.admin-bar .youplay-banner.banner-top {
+    padding-top: 126px; /* default 80px; */
+    min-height: 596px; /* default 550px */
+  }
+  body.logged-in.admin-bar .youplay-banner.banner-top.small {
+    min-height: 496px; /* default 450px */
+  }
+  body.logged-in.admin-bar .youplay-banner.banner-top.xsmall {
+    min-height: 396px; /* default 350px */
+  }
+}
+
+html.youplay_maintenance {
+  margin-top: 0 !important;
+}
+
+
+/* Fix toop full Banner */
+.youplay-banner.full {
+  overflow: hidden;
+}
+
+/* Added support for cover banner background */
+.cover-bg {
+  background-size: cover;
+}

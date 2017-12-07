@@ -1,0 +1,76 @@
+/* Some changes for bbPress Dark version */
+
+/* Text Editor */
+textarea#bbp_reply_content,
+textarea#bbp_topic_content,
+textarea#bbp_forum_content {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  width: 100%;
+  padding: 1rem 1.8rem;
+  background: rgba(255,255,255,.1);
+}
+.quicktags-toolbar {
+  background: #130F2C !important;
+  border-bottom: none !important;
+}
+.wp-core-ui .quicktags-toolbar input.button.button-small {
+  margin: 4px !important;
+}
+.wp-core-ui .quicktags-toolbar .button,
+.wp-core-ui .quicktags-toolbar .button-primary,
+.wp-core-ui .quicktags-toolbar .button-secondary {
+  border-width: 0;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #E0E0E0;
+  background: none;
+}
+.wp-core-ui .quicktags-toolbar .button:hover,
+.wp-core-ui .quicktags-toolbar .button-primary:hover,
+.wp-core-ui .quicktags-toolbar .button-secondary:hover {
+  background: #201B3A;
+  color: #E0E0E0;
+}
+@media screen and (min-width: 782px) {
+  .wp-core-ui .quicktags-toolbar input.button.button-small {
+    font-size: 1em !important;
+    height: 30px !important;
+    line-height: 25px !important;
+  }
+}
+
+/* Topic revision */
+.youplay-forum .bbp-topic-revision-log-item {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  font-size: .8em;
+}
+.youplay-forum .bbp-topic-revision-log-item .avatar {
+  width: auto;
+  transform: none;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+
+/* Fix some user forms font */
+form > tt {
+  font-family: inherit;
+}
+
+
+/* fix for version log */
+.youplay-forum .bbp-topic-revision-log-item img.avatar {
+  width: 14px;
+  height: auto;
+  margin: 0;
+}
+.youplay-forum .bbp-topic-revision-log-item {
+  padding: 0;
+}

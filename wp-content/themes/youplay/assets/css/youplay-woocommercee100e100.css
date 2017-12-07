@@ -1,0 +1,24 @@
+/* Some changes for WooCommerce Dark version */
+
+/* Price filter widget */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+  background-color: #ffffff;
+}
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+  background-color: #ffffff;
+  border-radius: 0;
+  -webkit-transform: skew(-8deg);
+  transform: skew(-8deg);
+  width: 16px;
+  height: 16px;
+  top: -6px;
+  margin-left: -10px;
+}
+.woocommerce .widget_price_filter .ui-slider-horizontal {
+  height: 3px;
+}
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+  background-color: rgba(255,255,255,.2);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
