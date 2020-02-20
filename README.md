@@ -1,0 +1,2 @@
+# slotomaniahack
+Sloto Mania Hack
